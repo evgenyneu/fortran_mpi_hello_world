@@ -13,7 +13,7 @@ brew install open-mpi
 ## Compile
 
 ```
-mpifort hello_mpi.f90 -o bin/mpi
+mpifort hello_mpi.f90 -o hello_mpi
 ```
 
 ## Run
@@ -21,7 +21,7 @@ mpifort hello_mpi.f90 -o bin/mpi
 Example of running two processes.
 
 ```
-mpiexec -n 2 ./bin/mpi
+mpiexec -n 2 ./hello_mpi
 ```
 
 Each process will print its ID and the total number of processes.
