@@ -1,4 +1,4 @@
-# A Hello World MPI program written in python
+# A Hello World MPI program written in Fortran
 
 Runs multiple programs in parallel using [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface). Based on [this manual](https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface).
 
