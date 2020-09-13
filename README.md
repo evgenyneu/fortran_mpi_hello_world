@@ -18,7 +18,7 @@ mpifort hello_mpi.f90 -o hello_mpi
 
 ## Run
 
-Example of running two processes.
+Example of running two processes:
 
 ```
 mpiexec -n 2 ./hello_mpi
