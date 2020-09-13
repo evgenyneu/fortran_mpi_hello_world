@@ -1,0 +1,2 @@
+cmd: "mpifort hello_mpi.f90 -o bin/mpi && mpiexec -n 2 ./bin/mpi"
+name: "Build"
