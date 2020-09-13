@@ -8,7 +8,7 @@ To install MPI on Mac use
 
 ```
 brew install open-mpi
-111
+```
 
 ## Compile
 
