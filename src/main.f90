@@ -4,10 +4,10 @@
 program hello
 
   use HelloMpi, only: hello_mpi
+  use Constants, only: OUTPUT_LENGTH
   implicit none
 
-  logical :: result
-
-  result = hello_mpi()
+  character(len=OUTPUT_LENGTH) :: result
+  result = hello_mpi(silent=.false.)
 
 end program hello

@@ -43,6 +43,7 @@ BUILD_DIR = ./build
 
 # List of all .f90 source files.
 SOURCE_FILES = types.f90 \
+							constants.f90 \
 							string.f90 \
 							asserts_test.f90 \
 							string_test.f90 \

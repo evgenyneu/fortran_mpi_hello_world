@@ -12,7 +12,7 @@ subroutine hello_mpi_test(failures)
   integer, intent(inout) :: failures
   logical :: result
 
-  result = hello_mpi()
+  result = hello_mpi(silent=.true.)
 
   call assert_true(result, __FILE__, __LINE__, failures)
 end

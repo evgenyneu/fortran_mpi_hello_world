@@ -1,13 +1,15 @@
 module HelloMpi
 use mpi
+use Constants, only: OUTPUT_LENGTH
 implicit none
 private
 public :: hello_mpi
 
 contains
 
-function hello_mpi() result(result)
-  logical :: result
+function hello_mpi(silent) result(result)
+  logical, intent(in) :: silent
+  character(len=OUTPUT_LENGTH) :: result
 
   integer :: ifail
   integer :: rank, size
@@ -17,12 +19,11 @@ function hello_mpi() result(result)
   call mpi_comm_rank(MPI_COMM_WORLD, rank, ifail)
   call mpi_comm_size(MPI_COMM_WORLD, size, ifail)
 
-  ! Each process prints out its ID and the total number of processes
-  write (unit = *, fmt = *) "Hello from rank ", rank, " of ", size
+  write(result, '(a, i2, x, a, i2)') "Hello from rank", rank, "of", size
+
+  if (.not. silent) write (0, *) trim(result)
 
   call mpi_finalize(ifail)
-
-  result = .true.
 end function
 
 
