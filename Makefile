@@ -19,12 +19,17 @@
 
 # Fortran compiler
 FC=mpifort
+
+# Intel compiler
 # FC=ifort
+
+# Fortran compiler for Magnus
+# FC=ftn
 
 # Compiler flags for gfortran
 FFLAGS=-J$(@D) -Wall -Wextra -g
 
-# Compiler flags for ifort
+# Compiler flags for ifort and ftn
 # FFLAGS=-module $(@D) -no-wrap-margin
 
 # Libraries to link
