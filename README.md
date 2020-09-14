@@ -44,12 +44,9 @@ Run:
 
 ```
 mpiexec -n 1 ./build/test
+· · · · · · · · · · · ·
+Tests finished successfully
 ```
-
-Output:
-
-> · · · · · · · · · · · ·
-> Tests finished successfully
 
 
 ## The unlicense
