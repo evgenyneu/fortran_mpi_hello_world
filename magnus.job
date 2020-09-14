@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --job-name=hello_mpi
+#SBATCH --job-name=hello_mpi_01
 #SBATCH --account=ew6
 #SBATCH --partition=workq
 #SBATCH --time=00:00:10
