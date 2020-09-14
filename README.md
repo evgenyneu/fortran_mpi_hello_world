@@ -108,7 +108,7 @@ exit
 
 ### Submit a job to the queue on Magnus
 
-Instead of submitting the job interactively, one can submit a [job script](magnus.job) to the queue.
+Instead of submitting the job interactively, one can submit a [job script](magnus.job) to the queue ([documentation](https://support.pawsey.org.au/documentation/display/US/Submitting+and+Monitoring+Jobs)).
 
 ```
 sbatch magnus.job
