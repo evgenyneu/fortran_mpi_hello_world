@@ -15,7 +15,9 @@ brew install open-mpi
 
 ```
 git clone https://github.com/evgenyneu/fortran_mpi_hello_world.git
+cd fortran_mpi_hello_world
 ```
+
 
 ## Compile
 
