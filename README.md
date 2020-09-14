@@ -40,6 +40,12 @@ cd fortran_mpi_hello_world
 make
 ```
 
+### Compile on Magnus
+
+```
+make -f Makefile.magnus
+```
+
 ## Run
 
 Example of running two processes:
@@ -53,6 +59,51 @@ Each process will print its ID and the total number of processes.
 ```
  Hello from rank 1 of 2
  Hello from rank 0 of 2
+```
+
+### Run on Magnus
+
+One can not run executable directly from the login node, because it is cross-compiles for the compute node. Instead, allocate a [SLURM job](https://support.pawsey.org.au/documentation/display/US/Submitting+and+Monitoring+Jobs) interactively, using one node for one minute in debug queue:
+
+```
+salloc -N 1 -p debugq -t 0:01:00
+```
+
+salloc output:
+
+```
+salloc: Granted job allocation 5462788
+salloc: Waiting for resource configuration
+salloc: Nodes nid00011 are ready for job
+```
+
+Run the program using 12 processes:
+
+```
+srun --export=all -n 12 ./build/hello_mpi
+```
+
+Run output:
+
+```
+ Hello from rank 0 of12
+ Hello from rank 1 of12
+ Hello from rank 2 of12
+ Hello from rank 3 of12
+ Hello from rank 4 of12
+ Hello from rank 5 of12
+ Hello from rank 6 of12
+ Hello from rank 7 of12
+ Hello from rank 9 of12
+ Hello from rank10 of12
+ Hello from rank11 of12
+ Hello from rank 8 of12
+```
+
+Exit the interactive job.
+
+```
+exit
 ```
 
 ## Run units tests
