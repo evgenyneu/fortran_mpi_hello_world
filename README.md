@@ -63,7 +63,7 @@ Each process will print its ID and the total number of processes.
 
 ### Run on Magnus
 
-One can not run executable directly from the login node, because it is cross-compiles for the compute node. Instead, allocate a [SLURM job](https://support.pawsey.org.au/documentation/display/US/Submitting+and+Monitoring+Jobs) interactively, using one node for one minute in debug queue:
+One can not run an executable directly from the login node, because it is cross-compiled for the compute node. Instead, allocate a [SLURM job](https://support.pawsey.org.au/documentation/display/US/Submitting+and+Monitoring+Jobs) interactively, using one node for one minute in debug queue:
 
 ```
 salloc -N 1 -p debugq -t 0:01:00
