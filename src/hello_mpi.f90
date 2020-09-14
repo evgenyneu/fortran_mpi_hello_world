@@ -1,10 +1,13 @@
-! Runs multiple programs in parallel using MPI
-! (https://en.wikipedia.org/wiki/Message_Passing_Interface)
-! Based on https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface
-program hello
+module HelloMpi
+use mpi
+implicit none
+private
+public :: hello_mpi
 
-  use mpi
-  implicit none
+contains
+
+function hello_mpi() result(result)
+  logical :: result
 
   integer :: ifail
   integer :: rank, size
@@ -19,4 +22,8 @@ program hello
 
   call mpi_finalize(ifail)
 
-end program hello
+  result = .true.
+end function
+
+
+end module HelloMpi

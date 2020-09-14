@@ -30,3 +30,8 @@ Each process will print its ID and the total number of processes.
 Hello from rank            0  of            2
 Hello from rank            1  of            2
 ```
+
+
+## The unlicense
+
+This work is in [public domain](LICENSE).
