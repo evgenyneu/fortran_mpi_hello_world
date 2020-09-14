@@ -86,18 +86,18 @@ srun --export=all -n 12 ./build/hello_mpi
 Run output:
 
 ```
- Hello from rank 0 of12
- Hello from rank 1 of12
- Hello from rank 2 of12
- Hello from rank 3 of12
- Hello from rank 4 of12
- Hello from rank 5 of12
- Hello from rank 6 of12
- Hello from rank 7 of12
- Hello from rank 9 of12
- Hello from rank10 of12
- Hello from rank11 of12
- Hello from rank 8 of12
+ Hello from rank 3 of 12
+ Hello from rank 6 of 12
+ Hello from rank 7 of 12
+ Hello from rank 9 of 12
+ Hello from rank 11 of 12
+ Hello from rank 0 of 12
+ Hello from rank 1 of 12
+ Hello from rank 2 of 12
+ Hello from rank 4 of 12
+ Hello from rank 5 of 12
+ Hello from rank 10 of 12
+ Hello from rank 8 of 12
 ```
 
 Exit the interactive job.
