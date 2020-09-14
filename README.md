@@ -127,7 +127,7 @@ Upon completion, it will create a file `slurm-5462955.out` containing program's 
 
 ```
 sacct -j 5462955
-```x
+```
 
 ## Run units tests
 
