@@ -6,6 +6,8 @@ program hello
   use HelloMpi, only: hello_mpi
   implicit none
 
-  ! hello_mpi()
+  logical :: result
+
+  result = hello_mpi()
 
 end program hello
