@@ -108,7 +108,7 @@ exit
 
 ### Submit a job to the queue on Magnus
 
-Instead of submitting the job interactively, one can submit a job script to the queue.
+Instead of submitting the job interactively, one can submit a [job script](magnus.job) to the queue.
 
 ```
 sbatch magnus.job
@@ -120,13 +120,32 @@ Output:
 Submitted batch job 5462955
 ```
 
-Upon completion, it will create a file `slurm-5462955.out` containing program's output.
+Upon completion, it will create a file `slurm-5462955.out` containing program's output:
+
+```
+ Hello from rank 29 of 48
+ Hello from rank 6 of 48
+ ...
+```
 
 
 #### Check job status
 
+Check the job's progress
+
 ```
 sacct -j 5462955
+```
+
+Output:
+
+```
+       JobID    JobName  Partition    Account  AllocCPUS      State ExitCode
+------------ ---------- ---------- ---------- ---------- ---------- --------
+5462955       hello_mpi     debugq        ew6         96  COMPLETED      0:0
+5462955.bat+      batch                   ew6         24  COMPLETED      0:0
+5462955.ext+     extern                   ew6         96  COMPLETED      0:0
+5462955.0     hello_mpi                   ew6         48  COMPLETED      0:0
 ```
 
 ## Run units tests
