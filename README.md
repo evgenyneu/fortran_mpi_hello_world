@@ -1,10 +1,17 @@
 # A Hello World MPI program written in Fortran
 
-Runs multiple programs in parallel using [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface). Based on [this manual](https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface).
+Runs multiple programs processes in parallel using [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and prints a 'hello' message from each process:
+
+```
+ Hello from rank 1 of 2
+ Hello from rank 0 of 2
+```
+
+Based on [this manual](https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface).
 
 ## Install Open MPI
 
-Mac: 
+Mac:
 
 ```
 brew install open-mpi
