@@ -1,6 +1,6 @@
 # A Hello World MPI program written in Fortran
 
-Runs multiple programs processes in parallel using [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and prints a 'hello' message from each process:
+Runs multiple program processes in parallel using [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and prints a 'hello' message from each process:
 
 ```
  Hello from rank 1 of 2
