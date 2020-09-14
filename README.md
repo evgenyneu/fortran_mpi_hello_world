@@ -7,7 +7,7 @@ Runs multiple programs processes in parallel using [MPI](https://en.wikipedia.or
  Hello from rank 0 of 2
 ```
 
-I wrote this program in order to learn how to run an MPI job on [Magnus supercomputer](https://support.pawsey.org.au/documentation/display/US/Supercomputing+Documentation). Based on [this manual](https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface).
+I wrote this program in order to learn how to run an MPI program on [Magnus supercomputer](https://support.pawsey.org.au/documentation/display/US/Supercomputing+Documentation). Based on [this manual](https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface).
 
 ## Install Open MPI
 
