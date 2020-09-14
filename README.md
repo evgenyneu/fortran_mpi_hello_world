@@ -100,7 +100,7 @@ Run output:
  Hello from rank 8 of 12
 ```
 
-Exit the interactive job.
+Exit the interactive job:
 
 ```
 exit
