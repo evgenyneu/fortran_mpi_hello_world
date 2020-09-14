@@ -10,6 +10,13 @@ To install MPI on Mac use
 brew install open-mpi
 ```
 
+## Download
+
+
+```
+git clone https://github.com/evgenyneu/fortran_mpi_hello_world.git
+```
+
 ## Compile
 
 ```
