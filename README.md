@@ -2,13 +2,21 @@
 
 Runs multiple programs in parallel using [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface). Based on [this manual](https://support.pawsey.org.au/documentation/display/US/Message+Passing+Interface).
 
-## Setup
+## Install Open MPI
 
-To install MPI on Mac use
+Mac: 
 
 ```
 brew install open-mpi
 ```
+
+Ubuntu:
+
+```
+sudo apt install openmpi-bin
+sudo apt install libopenmpi-dev
+```
+
 
 ## Download
 
