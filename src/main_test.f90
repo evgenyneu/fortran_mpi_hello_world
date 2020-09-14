@@ -1,11 +1,13 @@
 program MainTest
     use HelloMpiTest, only: hello_mpi_test_all
+    use StringTest, only: string_test_all
     implicit none
 
     integer :: failures = 0
     character(len=1024) :: test_word = "TESTS"
 
     call hello_mpi_test_all(failures)
+    call string_test_all(failures)
 
     if (failures == 0) then
         print *, NEW_LINE('h')//'Tests finished successfully'
