@@ -31,6 +31,21 @@ Hello from rank            0  of            2
 Hello from rank            1  of            2
 ```
 
+## Run units tests
+
+
+Compile:
+
+```
+make test
+```
+
+Run:
+
+```
+mpiexec -n 1 ./build/test
+```
+
 
 ## The unlicense
 
