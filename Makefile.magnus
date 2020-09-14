@@ -1,0 +1,7 @@
+# Fortran compiler for Magnus
+FC=ftn
+
+# Compiler flags for ifort and Magnus
+FFLAGS=-module $(@D) -no-wrap-margin
+
+include Makefile.common
