@@ -35,7 +35,7 @@ function hello_mpi(silent) result(result)
   call mpi_comm_size(MPI_COMM_WORLD, size, ifail)
 
   ! Print the ID of the process and the total number of them
-  write(result, '(a, i2, x, a, i2)') "Hello from rank", rank, "of", size
+  write(result, '(a, x, i0, x, a, x, i0)') "Hello from rank", rank, "of", size
   if (.not. silent) write (0, *) trim(result)
 
   call mpi_finalize(ifail)
