@@ -24,7 +24,7 @@ contains
 !
 function hello_mpi(silent) result(result)
   logical, intent(in) :: silent
-  character(len=m) :: result
+  character(len=OUTPUT_LENGTH) :: result
 
   integer :: ifail
   integer :: rank, size
