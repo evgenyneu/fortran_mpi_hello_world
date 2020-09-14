@@ -106,6 +106,29 @@ Exit the interactive job:
 exit
 ```
 
+### Submit a job to the queue on Magnus
+
+Instead of submitting the job interactively, one can submit a job script to the queue.
+
+```
+sbatch magnus.job
+```
+
+Output:
+
+```
+Submitted batch job 5462955
+```
+
+Upon completion, it will create a file `slurm-5462955.out` containing program's output.
+
+
+#### Check job status
+
+```
+sacct -j 5462955
+```x
+
 ## Run units tests
 
 
